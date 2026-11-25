@@ -1,0 +1,20 @@
+branch_id,branch_name,address,city,is_24h,near_hospital,reasons,lats,lons,precision
+MP001,MediPlus Tariq Road,"Shop 4, Ground Floor, Tariq Road, PECHS",Karachi,no,no,,,,street
+MP002,MediPlus Zamzama,"Plot 12-C, Zamzama Boulevard, DHA Phase 5",Karachi,yes,no,,,,street
+MP003,MediPlus Clifton Block 5,"Shop 7, Block 5, Clifton",Karachi,no,no,,,,area
+MP004,MediPlus Saddar,"Near Empress Market, Saddar",Karachi,no,no,,,,street
+MP005,MediPlus Gulshan,"B-21, Block 13-D, Gulshan-e-Iqbal",Karachi,yes,yes,,,,none
+MP006,MediPlus NIPA,"Opp. NIPA Chowrangi, University Road, Gulshan-e-Iqbal",Karachi,yes,no,,,,street
+MP007,MediPlus Bahadurabad,"Shop 2, Bahadurabad Chowrangi",Karachi,no,no,,,,street
+MP008,MediPlus North Nazimabad,"Block H, North Nazimabad",Karachi,no,no,,,,area
+MP009,MediPlus Five Star,"Five Star Chowrangi, North Karachi",Karachi,no,no,,,,street
+MP010,MediPlus Johar Mor,"Johar Mor, Gulistan-e-Johar",Karachi,yes,no,,,,street
+MP011,MediPlus Korangi,"Sector 31-A, Korangi",Karachi,no,no,,,,area
+MP012,MediPlus Malir,"Main Malir Road, Malir",Karachi,no,no,,,,area
+MP013,MediPlus Hyderi,"Hyderi Market, North Nazimabad",Karachi,no,no,,,,street
+MP014,MediPlus Boat Basin,"Shop 3, Boat Basin, Clifton",Karachi,yes,no,,,,street
+MP015,MediPlus Federal B Area,"Block 7, Federal B Area",Karachi,no,no,,,,area
+MP016,MediPlus Lyari,"Kalakot, Lyari",Karachi,no,no,,,,area
+MP017,MediPlus Nazimabad,"Sakhi Hasan Chowrangi, Nazimabad",Karachi,no,yes,,,,street
+MP018,MediPlus Shah Faisal,"Shop 9, Shah Faisal Colony",Karachi,no,no,,,,area
+MP020,MediPlus Lahore Test,"Mall Road, Lahore",Lahore,no,no,,,,none

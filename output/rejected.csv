@@ -1,0 +1,5 @@
+branch_id,branch_name,address,city,is_24h,near_hospital,reasons
+MP019,MediPlus Bad Row Empty,,Karachi,no,no,empty address
+,MediPlus No ID,"Shop 1, Clifton",Karachi,no,no,missing branch_id
+MP001,MediPlus Duplicate,"Shop 4, Tariq Road, PECHS",Karachi,no,no,duplicate branch_id
+MP021,MediPlus Short,abc,Karachi,no,no,address to short
