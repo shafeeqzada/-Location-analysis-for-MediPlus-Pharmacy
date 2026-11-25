@@ -17,7 +17,7 @@ places = places.sort_values("precision", ascending = False)
 branches["reasons"] = ""
 branches.loc[branches["branch_id"].isna(), "reasons"] = "missing branch_id"
 branches.loc[branches["address"].isna(), "reasons"] = "empty address"
-branches.loc[branches["address"].str.len() < 8, "reasons"] = "address to short"
+branches.loc[branches["address"].str.len() < 8, "reasons"] = "address too short"
 branches.loc[branches["branch_id"].duplicated() &( branches["reasons"] == ""), "reasons"] = "duplicate branch_id"
 
 rejected = branches[branches["reasons"] != ""]
@@ -25,7 +25,7 @@ good = branches[branches["reasons"] == ""].copy()
 
 lats , lons , precisions = [] , [], []
 for address in good["address"]:
-    text = address.lower().replace("-", "").replace(",", "")
+    text = address.lower().replace("-", " ").replace(",", " ")
     lat = None
     lon = None
     precision = "none"
@@ -38,8 +38,8 @@ for address in good["address"]:
     lons.append(lon)
     precisions.append(precision)
 
-good["lats"] = lat
-good["lons"] = lon
+good["lat"] = lats
+good["lon"] = lons
 good["precision"] = precisions
 
 good.to_csv("output/geocoded.csv", index = False)
@@ -48,8 +48,5 @@ rejected.to_csv("output/rejected.csv", index = False)
 
 print(good["precision"].value_counts())
 print("rejected:", len(rejected))
-
-# jin branches ka match nahi mila, unka naam aur address dikhao
-print(good[good["precision"] == "none"][["branch_name", "address"]])
 
  
