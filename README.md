@@ -6,10 +6,10 @@ Branch addresses (Karachi) ko latitude/longitude mein badalta hai, aur har resul
 
     pip install -r requirements.txt
     python src/geocode.py
-    python tests/test_geocode.py
+    python test/test_geocode.py
 
 Input files: data/branches_sample.csv and data/gazetteer_karachi.csv
-Output files: outputs/geocoded.csv and outputs/rejected.csv
+Output files: output/geocoded.csv and output/rejected.csv
 
 ## Result (sample data)
 

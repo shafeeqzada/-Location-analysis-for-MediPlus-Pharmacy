@@ -8,6 +8,8 @@ for path in ["data/branches_sample.csv", "data/gazetteer_karachi.csv"]:
         print("ERROR: file nahi mili ->", path)
         sys.exit(1)
 
+os.makedirs("output", exist_ok=True)        
+
 branches = pd.read_csv("data/branches_sample.csv")
 places = pd.read_csv("data/gazetteer_karachi.csv")
 
